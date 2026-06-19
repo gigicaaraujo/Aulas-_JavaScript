@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Giovanna, @giovanna_araujooo, giovannadasilvaaraujo@gmail.com, (11)934415839">
+    <title>DESAFIO 04 - AULA 02</title>
+
+    <!-- <link rel="icon" type="images/png" href="https://sc.ltwebstatic.com/she_dist/images/touch-icon-ipad-72-452a7213ef.png"> -->
+    <link rel="icon" type="images/png" href="../favicon.jpg">
+</head>
+
+<body>
+    <h1><mark>INTERAÇÃO JS COM FORMS</mark>DO HTML </h1>
+    <hr>
+    <input type="button" onclick="triste();" value="FELIZ">
+    <input type="button" onclick="feliz();" value="TRISTE">
+    <img src="img/emogitriste.jpg" id="rosto" style="width: 350px;">
+
+    <script>
+
+        function triste() {
+            const tags_img = document.getElementsByTagName('img')[0]
+            console.log(tags_img)
+            tags_img.src = "img/emogifeliz.jpg";
+        }
+        function feliz() {
+            const tags_img = document.getElementsByTagName('img')[0]
+            console.log(tags_img)
+            tags_img.src = "img/emogitriste.jpg";
+        }
+    </script>
+</body>
+</html>
